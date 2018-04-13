@@ -63,7 +63,7 @@ let subtotal = prices.sandwich + meatCost + toppingCost + condimentCost;
 
 // TODO: Calculate the tax owed using the waStateTaxRate.
 let waStateTaxRate = 0.065;
-let orderTax = subtotal * waSateTaxRate;
+let orderTax = subtotal * waStateTaxRate;
 
 // TODO: Calculate `totalPrice` by adding `subtotal` and `orderTax`.
 let totalPrice = subtotal * orderTax;
@@ -81,12 +81,12 @@ let receiptTemplate = `
     <p>Bread: ${breadOrder}</p>
     <p>Meat: ${meatOrder}</p>
     <p>Toppings: ${toppingsOrder}</p>
-    <p>Condiments: ${condimentsOrder}</p>
+    <p>Condiments: ${condimentOrder}</p>
     <p>---------------------</p>
     <p class="text-right">Sandwich: $${prices.sandwich.toFixed(2)}</p>
     <p class="text-right">Meat: $${meatCost.toFixed(2)}</p>
     <p class="text-right">Toppings: $${toppingCost.toFixed(2)}</p>
-    <p class="text-right">Condiments: $${condimentOrder.toFixed(2)}</p>
+    <p class="text-right">Condiments: $${condimentsCost.toFixed(2)}</p>
     <p class="text-right">--------</p>
     <p class="text-right">Subtotal: $${subtotal.toFixed(2)}/p>
     <p class="text-right">Tax: $${orderTax.toFixed(2)}</p>
