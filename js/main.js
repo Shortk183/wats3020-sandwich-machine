@@ -81,12 +81,12 @@ let receiptTemplate = `
     <p>Bread: ${breadOrder}</p>
     <p>Meat: ${meatOrder}</p>
     <p>Toppings: ${toppingsOrder}</p>
-    <p>Condiments: ${condimentOrder}</p>
+    <p>Condiments: ${condimentsOrder}</p>
     <p>---------------------</p>
     <p class="text-right">Sandwich: $${prices.sandwich.toFixed(2)}</p>
     <p class="text-right">Meat: $${meatCost.toFixed(2)}</p>
     <p class="text-right">Toppings: $${toppingCost.toFixed(2)}</p>
-    <p class="text-right">Condiments: $${condimentsCost.toFixed(2)}</p>
+    <p class="text-right">Condiments: $${condimentCost.toFixed(2)}</p>
     <p class="text-right">--------</p>
     <p class="text-right">Subtotal: $${subtotal.toFixed(2)}</p>
     <p class="text-right">Tax: $${orderTax.toFixed(2)}</p>
